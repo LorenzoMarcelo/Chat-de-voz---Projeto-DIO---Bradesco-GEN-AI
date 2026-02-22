@@ -28,18 +28,7 @@ Este projeto serve como base para aplicações maiores, como chatbots, assistent
 CHATVOZ/
 │── main.py
 
-from openai import OpenAI
-
-client = OpenAI(api_key="client = OpenAI(api_key="SUA_CHAVE_AQUI")")
-
-def testar_chatgpt():
-    resposta = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {"role": "user", "content": "Olá, você está funcionando?"}
-        ]
-    )
-    print(resposta.choices[0].message["content"])
+essage["content"])
 
 if __name__ == "__main__":
     testar_chatgpt()
